@@ -1,0 +1,446 @@
+/* ESHWARI TRADERS - Website Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d2939;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: #0b1f3a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f5a623;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5a623;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(5, 20, 40, 0.75), rgba(5, 20, 40, 0.75)),
+        url("images/steel.jpg") center/cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #f5a623;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #f5a623;
+    color: #111;
+}
+
+.btn-primary:hover {
+    background: #ffbe55;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    opacity: 0.85;
+}
+
+/* General Sections */
+
+section {
+    padding: 80px 25px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #0b1f3a;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #667085;
+}
+
+/* About */
+
+.about {
+    background: #f7f9fc;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+/* Products */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e4e7ec;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #0b1f3a;
+    margin-bottom: 10px;
+}
+
+/* Brands */
+
+.brands {
+    background: #f7f9fc;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.brand {
+    background: white;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #e4e7ec;
+    font-size: 23px;
+    font-weight: bold;
+    color: #0b1f3a;
+}
+
+/* Why Choose Us */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.why-card .icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.why-card h3 {
+    color: #0b1f3a;
+    margin-bottom: 8px;
+}
+
+/* Enquiry */
+
+.enquiry {
+    background: #0b1f3a;
+    color: white;
+}
+
+.enquiry .section-title h2 {
+    color: white;
+}
+
+.enquiry-form {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.enquiry-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.enquiry-form button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Contact */
+
+.contact {
+    background: #f7f9fc;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e4e7ec;
+}
+
+.contact-box h3 {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item strong {
+    color: #0b1f3a;
+}
+
+/* Footer */
+
+footer {
+    background: #061426;
+    color: white;
+    padding: 40px 25px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    color: #f5a623;
+}
+
+footer p,
+footer a {
+    color: #d0d5dd;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #344054;
+    text-align: center;
+    color: #98a2b3;
+}
+
+/* Floating WhatsApp */
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    z-index: 999;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .
